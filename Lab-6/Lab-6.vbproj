@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aboutform.Designer.vb">
+      <DependentUpon>aboutform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutform.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="lab5sdi.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="aboutform.resx">
+      <DependentUpon>aboutform.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="lab5sdi.resx">
       <DependentUpon>lab5sdi.vb</DependentUpon>
     </EmbeddedResource>
